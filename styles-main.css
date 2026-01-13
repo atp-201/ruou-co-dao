@@ -30,7 +30,6 @@ header {
 }
 
 header .brand {
-    text-decoration: none;
     font-size: clamp(1.5rem, 3vw, 2rem);
     color: #c0392b;
     text-align: center;
@@ -210,5 +209,3 @@ nav a.active {
         margin: 0 0.5rem;
     }
 }
-
-
