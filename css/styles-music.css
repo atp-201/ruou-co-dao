@@ -1,0 +1,32 @@
+/* ================================================= */
+/* MUSIC PLAYER – GÓC TRÊN TRÁI */
+/* ================================================= */
+
+.music-player {
+    position: fixed;        /* Luôn hiện khi scroll */
+    top: 16px;              /* Cách mép trên */
+    left: 16px;             /* Cách mép trái */
+    z-index: 999;
+}
+
+.music-player button {
+    background: #8e2a1c;    /* Màu rượu truyền thống */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.music-player button:hover {
+    background: #a93226;
+}
+
+@media (max-width: 768px) {
+    .music-player {
+        display: none;
+    }
+}
