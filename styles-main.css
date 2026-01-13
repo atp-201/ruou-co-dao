@@ -24,6 +24,32 @@ header .brand {
     display: block;
     margin-bottom: 0.5rem;
 }
+/* Logo / Brand */
+.brand {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #7b1e1e;              /* màu rượu vang */
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.brand-strong {
+    font-weight: 800;
+    color: #c0392b;              /* đỏ nổi bật */
+}
+
+.brand:hover {
+    color: #c0392b;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .brand {
+        font-size: 1.4rem;
+    }
+}
+
 nav {
     text-align: center;
 }
