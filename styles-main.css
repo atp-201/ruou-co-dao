@@ -16,6 +16,7 @@ header .brand:active {
     text-decoration: none;
 }
 header {
+    text-decoration: none;
     background-color: #fff;
     padding: 1rem 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -209,3 +210,4 @@ nav a.active {
         margin: 0 0.5rem;
     }
 }
+
