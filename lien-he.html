@@ -56,14 +56,36 @@
         </a>
 
     </div>
+  
     <!-- MAP -->
     <div class="map-box">
-        <iframe
+        <iframe 
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
-            loading="lazy"
-            allowfullscreen>
+            allowfullscreen=""
+            loading="lazy">
         </iframe>
     </div>
+    <button class="btn-open-map" onclick="openMap()">Mở bản đồ Google Maps</button>
+    <script>
+    function openMap() {
+      const lat = 11.735306;
+      const lng = 107.645083;
+
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      if (isMobile) {
+        // 📱 Ưu tiên mở app Google Maps
+        window.location.href = `geo:${lat},${lng}?q=${lat},${lng}`;
+      } else {
+        // 💻 Mở Google Maps trên trình duyệt
+        window.open(
+          `https://www.google.com/maps?q=${lat},${lng}`,
+          "_blank"
+        );
+      }
+    }
+    </script>
+
 </section>
 
 
@@ -138,3 +160,4 @@ document.getElementById('year5').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
+
