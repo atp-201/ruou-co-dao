@@ -1,0 +1,211 @@
+/* ========================= */
+/* Tổng thể & Header/Footer */
+/* ========================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0;
+    color: #333;
+    line-height: 1.6;
+}
+header .brand,
+header .brand:hover,
+header .brand:focus,
+header .brand:active {
+    text-decoration: none;
+}
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    /* CĂN GIỮA CHUẨN */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .brand {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #c0392b;
+    text-align: center;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+ */
+/* ===== LOGO CHỮ CAO CẤP ===== */
+header .brand {
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.1;
+    display: inline-block;
+}
+
+/* Dòng nhỏ trên */
+.brand-top {
+    display: block;
+    font-size: 0.65em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    margin-bottom: 0.3rem;
+}
+
+/* TÊN CHÍNH */
+.brand-strong {
+    display: block;
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    color: #7a1515;
+    text-shadow:
+        0 1px 0 #fff,
+        0 3px 8px rgba(122, 21, 21, 0.35);
+}
+
+/* Hover sang trọng */
+header .brand:hover .brand-strong {
+    color: #c0392b;
+}
+
+/* Mobile tinh chỉnh */
+@media (max-width: 768px) {
+    .brand-strong {
+        font-size: 1.4em;
+    }
+}
+
+
+
+nav {
+    text-align: center;
+}
+nav a {
+    margin: 0 0.8rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav a:hover,
+nav a.active {
+    color: #c0392b;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.site-footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+.section {
+    padding: clamp(2rem, 5vw, 4rem) 0;
+}
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+.grid.three {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.card h3 {
+    color: #c0392b;
+    margin-bottom: 0.5rem;
+}
+.card p {
+    color: #555;
+}
+
+/* ========================= */
+/* Hero Section */
+/* ========================= */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(3rem, 6vw, 6rem) 0;
+    background-color: #fff4e6;
+    border-radius: 12px;
+    margin-bottom: 2.5rem;
+}
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+    margin-bottom: 1rem;
+}
+.hero-text h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #c0392b;
+    margin-bottom: 1rem;
+}
+.hero-text .lead {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-bottom: 1.5rem;
+}
+.hero-buttons a {
+    margin-right: 0.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.hero-buttons .btn {
+    background-color: #c0392b;
+    color: #fff;
+}
+.hero-buttons .btn:hover {
+    background-color: #e74c3c;
+}
+.hero-buttons .btn-outline {
+    border: 2px solid #c0392b;
+    color: #c0392b;
+    background: transparent;
+}
+.hero-buttons .btn-outline:hover {
+    background-color: #c0392b;
+    color: #fff;
+}
+.hero-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ========================= */
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-text {
+        margin-bottom: 2rem;
+    }
+    nav a {
+        margin: 0 0.5rem;
+    }
+}
