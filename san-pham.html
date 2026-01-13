@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="css/styles-main.css">
 <link rel="stylesheet" href="css/styles-product.css">
 <link rel="stylesheet" href="css/styles-form.css">
+<link rel="stylesheet" href="css/styles-music.css">
+
 </head>
 <body>
 <header class="site-header">
@@ -79,8 +81,17 @@
 <script>
 document.getElementById('year4').textContent = new Date().getFullYear();
 </script>
+
+<!-- MUSIC PLAYER -->
+<div class="music-player">
+  <button id="musicBtn">🔊 Nhạc</button>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/music.js"></script>
+
 </body>
 </html>
-
-
-
