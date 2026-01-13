@@ -16,6 +16,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+
+    /* CĂN GIỮA CHUẨN */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .brand {
@@ -198,3 +203,4 @@ nav a.active {
         margin: 0 0.5rem;
     }
 }
+
