@@ -9,6 +9,12 @@ body {
     color: #333;
     line-height: 1.6;
 }
+header .brand,
+header .brand:hover,
+header .brand:focus,
+header .brand:active {
+    text-decoration: none;
+}
 header {
     background-color: #fff;
     padding: 1rem 0;
@@ -24,15 +30,13 @@ header {
 }
 
 header .brand {
-    text-decoration: none;
     font-size: clamp(1.5rem, 3vw, 2rem);
     color: #c0392b;
     text-align: center;
     display: block;
     margin-bottom: 0.5rem;
 }
-
-
+ */
 /* ===== LOGO CHỮ CAO CẤP ===== */
 header .brand {
     text-align: center;
@@ -205,6 +209,3 @@ nav a.active {
         margin: 0 0.5rem;
     }
 }
-
-
-
