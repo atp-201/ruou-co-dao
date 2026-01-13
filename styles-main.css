@@ -17,6 +17,7 @@ header {
     top: 0;
     z-index: 100;
 }
+
 header .brand {
     font-size: clamp(1.5rem, 3vw, 2rem);
     color: #c0392b;
@@ -24,31 +25,50 @@ header .brand {
     display: block;
     margin-bottom: 0.5rem;
 }
-/* Logo / Brand */
-.brand {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #7b1e1e;              /* màu rượu vang */
+ */
+/* ===== LOGO CHỮ CAO CẤP ===== */
+header .brand {
+    text-align: center;
     text-decoration: none;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+    line-height: 1.1;
+    display: inline-block;
 }
 
+/* Dòng nhỏ trên */
+.brand-top {
+    display: block;
+    font-size: 0.65em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    margin-bottom: 0.3rem;
+}
+
+/* TÊN CHÍNH */
 .brand-strong {
-    font-weight: 800;
-    color: #c0392b;              /* đỏ nổi bật */
+    display: block;
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    color: #7a1515;
+    text-shadow:
+        0 1px 0 #fff,
+        0 3px 8px rgba(122, 21, 21, 0.35);
 }
 
-.brand:hover {
+/* Hover sang trọng */
+header .brand:hover .brand-strong {
     color: #c0392b;
 }
 
-/* Mobile */
+/* Mobile tinh chỉnh */
 @media (max-width: 768px) {
-    .brand {
-        font-size: 1.4rem;
+    .brand-strong {
+        font-size: 1.4em;
     }
 }
+
+
 
 nav {
     text-align: center;
