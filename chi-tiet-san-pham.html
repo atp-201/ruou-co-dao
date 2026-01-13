@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chi tiết sản phẩm — Rượu Cô Đào</title>
+<link rel="stylesheet" href="styles-main.css">
+<link rel="stylesheet" href="styles-product.css">
+<link rel="stylesheet" href="styles-form.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Rượu <span class="brand-strong">Cô Đào</span></a>
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="san-pham.html">Sản phẩm</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container product-detail">
+    <div class="img-box">
+      <img src="/assets/ruou-nep-29.jpg" alt="Rượu 29°">
+      <div class="gallery">
+        <img src="/assets/ruou-nep-29.jpg" alt="Hình 1">
+        <img src="/assets/ruou-nep-29-2.jpg" alt="Hình 2">
+        <img src="/assets/ruou-nep-29-3.jpg" alt="Hình 3">
+      </div>
+    </div>
+    <div class="info-box">
+      <h2>Rượu 29°</h2>
+      <p class="desc">Rượu 29° hương nhẹ, êm dịu, thích hợp dùng hằng ngày hoặc làm quà tặng.</p>
+      <p class="price">Giá: 150.000 VND</p>
+      <button class="btn-cart">Thêm vào giỏ</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year4"></span> Rượu Cô Đào</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year4').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

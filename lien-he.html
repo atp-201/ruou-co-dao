@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liên hệ — Rượu Cô Đào</title>
+<link rel="stylesheet" href="styles-main.css">
+<link rel="stylesheet" href="styles-product.css">
+<link rel="stylesheet" href="styles-contact.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Rượu <span class="brand-strong">Cô Đào</span></a>
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="san-pham.html">Sản phẩm</a>
+      <a href="lien-he.html" class="active">Liên hệ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="contact-section">
+    <h2>Liên Hệ</h2>
+  
+    <!-- Nút liên hệ -->
+    <div class="contact-buttons">
+
+        <!-- Zalo -->
+        <a href="https://zalo.me/your_zalo_id" target="_blank" class="contact-btn zalo">
+            <img src="icons/zalo.png" alt="Zalo">
+            Liên hệ Zalo
+        </a>
+
+        <!-- Messenger -->
+        <a href="https://m.me/your_facebook_id" target="_blank" class="contact-btn messenger">
+            <img src="icons/messenger.png" alt="Messenger">
+            Nhắn Messenger
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@your_tiktok_username" target="_blank" class="contact-btn tiktok">
+            <img src="icons/tiktok.png" alt="TikTok">
+            TikTok
+        </a>    
+    </div>
+    <!-- MAP -->
+    <div class="map-box">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- <main class="section">
+  <div class="container contact-section">
+    <h2>Liên hệ trực tiếp 0989557099 hoặc gửi mail</h2>
+    <form class="contact-form" action="https://formsubmit.co/ruoucodao@gmail.com" method="POST">
+      <label>Họ tên<input type="text" name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Số điện thoại<input type="tel" name="phone" required></label>
+      <label>Nội dung<textarea name="message" rows="5" required></textarea></label>
+      <button type="submit">Gửi liên hệ</button>
+    </form>
+    <div style="margin-top:30px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
+        width="100%" height="300" style="border:0; border-radius:8px;" loading="lazy"></iframe>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year5"></span> Rượu Cô Đào</p>
+  </div>
+</footer>
+ -->
+<script>
+document.getElementById('year5').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

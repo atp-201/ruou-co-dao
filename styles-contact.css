@@ -1,0 +1,156 @@
+/* ========================= */
+/* Form liên hệ & Popup */
+/* ========================= */
+
+
+.contact-section {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff8f0;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #c0392b;
+    margin-bottom: 0.5rem;
+}
+
+.contact-note {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* MAP */
+.map-box {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Buttons */
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0.9rem;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-btn img {
+    width: 26px;
+    height: 26px;
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* Màu từng nền */
+.zalo { background: #0068ff; }
+.messenger { background: #0078ff; }
+.tiktok { background: #000; }
+
+/* Mobile */
+@media (max-width: 480px) {
+    .map-box {
+        height: 220px;
+    }
+}
+
+
+/* .contact-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff8f0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.contact-section h2 {
+    text-align: center;
+    color: #c0392b;
+    margin-bottom: 1.5rem;
+}
+.contact-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 5px rgba(192,57,43,0.3);
+    outline: none;
+}
+.contact-section button {
+    display: block;
+    width: 100%;
+    background: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.contact-section button:hover {
+    background: #e74c3c;
+}
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #27ae60;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    bottom: 30px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.5s;
+}
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px;
+} */

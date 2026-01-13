@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rượu Cô Đào — Trang chủ</title>
+<link rel="stylesheet" href="styles-main.css">
+<link rel="stylesheet" href="styles-product.css">
+<link rel="stylesheet" href="styles-form.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Rượu <span class="brand-strong">Cô Đào</span></a>
+    <nav class="nav">
+      <a href="index.html" class="active">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="san-pham.html">Sản phẩm</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Rượu gạo truyền thống — Hương vị làng quê</h1>
+        <p class="lead">Rượu Cô Đào giữ trọn hương vị gia truyền, tinh chọn gạo và men quê.</p>
+        <div class="hero-buttons">
+          <a class="btn" href="san-pham.html">Xem sản phẩm</a>
+          <a class="btn btn-outline" href="lien-he.html">Liên hệ</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/bottle-main.jpg" alt="Chai rượu Cô Đào">
+      </div>
+    </div>
+  </section>
+
+  <section class="section intro">
+    <div class="container">
+      <h2>Về Rượu Cô Đào</h2>
+      <p class="muted">Xuất phát từ truyền thống nấu rượu gạo của làng quê, chúng tôi cam kết mang đến sản phẩm chất lượng và hương vị thuần khiết.</p>
+      <div class="grid three">
+        <div class="card"><h3>Nguyên liệu chọn lọc</h3><p>Gạo thơm địa phương.</p></div>
+        <div class="card"><h3>Quy trình thủ công</h3><p>Ủ – chưng cất gia truyền.</p></div>
+        <div class="card"><h3>Cam kết chất lượng</h3><p>Đóng chai đạt chuẩn.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section products">
+    <div class="container">
+      <h2>Sản phẩm nổi bật</h2>
+      <div class="grid three">
+        <article class="product-card">
+          <img src="/assets/ruou-nep-29.jpg" class="product-img">
+          <h3>Rượu 29°</h3>
+          <p class="small">Hương nhẹ – êm dịu.</p>
+        </article>
+        <article class="product-card">
+          <img src="/assets/ruou-nep-35.jpg" class="product-img">
+          <h3>Rượu 35°</h3>
+          <p class="small">Đậm hơn – hợp món ăn mạnh vị, ngâm thuốc.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Rượu Cô Đào</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
