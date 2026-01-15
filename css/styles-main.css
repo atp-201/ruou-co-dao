@@ -72,14 +72,6 @@ header .brand:hover .brand-strong {
     color: #c0392b;
 }
 
-/* Mobile tinh chỉnh */
-@media (max-width: 768px) {
-    .brand-strong {
-        font-size: 1.4em;
-    }
-}
-
-
 
 nav {
     text-align: center;
@@ -207,5 +199,38 @@ nav a.active {
     }
     nav a {
         margin: 0 0.5rem;
+    }
+}
+
+/* Mobile tinh chỉnh */
+@media (max-width: 768px) {
+    .brand-strong {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem 1rem;
+        border-radius: 0;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .music-player {
+        top: auto;
+        bottom: 14px;
+        left: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .qr-item img {
+        width: 120px;
+        height: 120px;
     }
 }
