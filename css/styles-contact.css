@@ -80,3 +80,12 @@
 .btn-open-map:active {
     opacity: 0.85;
 }
+
+/* ========================= */
+/* CONTACT NỔI TRÊN NỀN */
+/* ========================= */
+
+.contact-section {
+    box-shadow:
+        0 10px 28px rgba(122, 21, 21, 0.12);
+}
