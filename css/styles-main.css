@@ -1,14 +1,39 @@
 /* ========================= */
 /* Tổng thể & Header/Footer */
 /* ========================= */
+/* ========================= */
+/* BACKGROUND TEXTURE CAO CẤP */
+/* ========================= */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdf6f0;
     color: #333;
     line-height: 1.6;
+
+    /* Nền màu gốc */
+    background-color: #fdf6f0;
+
+    /* Texture giấy mỹ thuật (CSS thuần) */
+    background-image:
+        radial-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+        radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+        linear-gradient(180deg, #fdf6f0 0%, #fff4e6 100%);
+
+    background-size:
+        4px 4px,
+        6px 6px,
+        100% 100%;
+
+    background-position:
+        0 0,
+        2px 2px,
+        center;
+
+    background-attachment: fixed;
 }
+
 header .brand,
 header .brand:hover,
 header .brand:focus,
@@ -233,4 +258,31 @@ nav a.active {
         width: 120px;
         height: 120px;
     }
+}
+
+@media (max-width: 768px) {
+    .section,
+    .hero {
+        border-radius: 0;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+}
+
+
+/* ========================= */
+/* VÙNG NỘI DUNG NỔI */
+/* ========================= */
+
+.section,
+.hero,
+.site-footer {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.96) 0%,
+        rgba(255, 248, 240, 0.96) 100%
+    );
+    border-radius: 16px;
 }
