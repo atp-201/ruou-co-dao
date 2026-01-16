@@ -25,9 +25,18 @@
     background: #a93226;
 }
 
+@media (max-width: 480px) {
+    .music-player {
+        top: auto;
+        bottom: 14px;
+        left: 14px;
+    }
+}
+
 /* @media (max-width: 768px) {
     .music-player {
         display: none;
     }
 } */
+
 
