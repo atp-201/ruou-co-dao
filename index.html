@@ -93,21 +93,17 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
   <!-- MUSIC PLAYER -->
   <div class="music-player">
     <button id="musicBtn">🔊 Nhạc</button>
   </div>
 
-  <audio id="bgMusic" loop>
+  <audio id="bgMusic" loop preload="auto">
     <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
   </audio>
 
+  <script src="js/hide.js"></script>
   <script src="js/music.js"></script>
-
 
   <script type="application/ld+json">
   {
@@ -123,13 +119,5 @@
     }
   }
   </script>
-
 </body>
 </html>
-
-
-
-
-
-
-
