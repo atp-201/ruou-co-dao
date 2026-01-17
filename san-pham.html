@@ -20,96 +20,88 @@
 </head>
 
 <body>
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <span class="brand-top">Rượu</span>
-      <span class="brand-strong">Cô Đào</span>
-    </a>
-    <nav class="nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="gioi-thieu.html">Giới thiệu</a>
-      <a href="san-pham.html" class="active">Sản phẩm</a>
-      <a href="lien-he.html">Liên hệ</a>
-    </nav>
-  </div>
-</header>
-
-<main class="section">
-  <div class="container">
-    <h1>Sản phẩm Rượu Cô Đào</h1>
-    <p class="lead">Các loại rượu gạo truyền thống Rượu Cô Đào: 30 độ, 40 độ, 50 độ.</p>
-    <div class="container product-list">
-
-    <!-- RƯỢU 30 -->
-    <div class="product-row">
-      <div class="product-img">
-        <img src="assets/ruou-co-dao-30-do.jpg" alt="Rượu Cô Đào 30 độ">
-        <span class="label">30°</span>
-      </div>
-
-      <div class="product-info">
-        <h3>Rượu 30°</h3>
-        <p class="desc">Hương nhẹ, dễ uống, phù hợp dùng hằng ngày.</p>
-        <p class="price">20.000 VND / lít</p>
-      </div>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-top">Rượu</span>
+        <span class="brand-strong">Cô Đào</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="san-pham.html" class="active">Sản phẩm</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- RƯỢU 40 -->
-    <div class="product-row">
-      <div class="product-img">
-        <img src="assets/ruou-co-dao-40-do.jpg" alt="Rượu Cô Đào 40 độ">
-        <span class="label">40°</span>
+  <main class="section">
+    <div class="container">
+      <h1>Sản phẩm Rượu Cô Đào</h1>
+      <p class="lead">Các loại rượu gạo truyền thống Rượu Cô Đào: 30 độ, 40 độ, 50 độ.</p>
+      <div class="container product-list">
+
+      <!-- RƯỢU 30 -->
+      <div class="product-row">
+        <div class="product-img">
+          <img src="assets/ruou-co-dao-30-do.jpg" alt="Rượu Cô Đào 30 độ">
+          <span class="label">30°</span>
+        </div>
+
+        <div class="product-info">
+          <h3>Rượu 30°</h3>
+          <p class="desc">Hương nhẹ, dễ uống, phù hợp dùng hằng ngày.</p>
+          <p class="price">20.000 VND / lít</p>
+        </div>
       </div>
 
-      <div class="product-info">
-        <h3>Rượu 40°</h3>
-        <p class="desc">Phù hợp nấu ăn, ngâm rượu thuốc.</p>
-        <p class="price">25.000 VND / lít</p>
+      <!-- RƯỢU 40 -->
+      <div class="product-row">
+        <div class="product-img">
+          <img src="assets/ruou-co-dao-40-do.jpg" alt="Rượu Cô Đào 40 độ">
+          <span class="label">40°</span>
+        </div>
+
+        <div class="product-info">
+          <h3>Rượu 40°</h3>
+          <p class="desc">Phù hợp nấu ăn, ngâm rượu thuốc.</p>
+          <p class="price">25.000 VND / lít</p>
+        </div>
       </div>
+
+      <!-- RƯỢU 50 -->
+      <div class="product-row">
+        <div class="product-img">
+          <img src="assets/ruou-co-dao-50-do.jpg" alt="Rượu Cô Đào 50 độ">
+          <span class="label">50°</span>
+        </div>
+
+        <div class="product-info">
+          <h3>Rượu 50°</h3>
+          <p class="desc">Nồng độ cao, dùng ngâm dược liệu.</p>
+          <p class="price">30.000 VND / lít</p>
+        </div>
+      </div>
+
     </div>
+  </main>
 
-    <!-- RƯỢU 50 -->
-    <div class="product-row">
-      <div class="product-img">
-        <img src="assets/ruou-co-dao-50-do.jpg" alt="Rượu Cô Đào 50 độ">
-        <span class="label">50°</span>
-      </div>
-
-      <div class="product-info">
-        <h3>Rượu 50°</h3>
-        <p class="desc">Nồng độ cao, dùng ngâm dược liệu.</p>
-        <p class="price">30.000 VND / lít</p>
-      </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year4"></span> Rượu Cô Đào</p>
     </div>
+  </footer>
 
+  <!-- MUSIC PLAYER -->
+  <div class="music-player">
+    <button id="musicBtn">🔊 Nhạc</button>
   </div>
-</main>
 
+  <audio id="bgMusic" loop preload="auto">
+    <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
+  </audio>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span id="year4"></span> Rượu Cô Đào</p>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year4').textContent = new Date().getFullYear();
-</script>
-
-<!-- MUSIC PLAYER -->
-<div class="music-player">
-  <button id="musicBtn">🔊 Nhạc</button>
-</div>
-
-<audio id="bgMusic" loop>
-  <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
-</audio>
-
-<script src="js/music.js"></script>
-
+  <script src="js/hide.js"></script>
+  <script src="js/music.js"></script>
 </body>
 </html>
-
-
-
