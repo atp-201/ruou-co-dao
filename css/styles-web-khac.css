@@ -84,3 +84,24 @@
     font-size: 0.9rem;
     color: #555;
 }
+
+/* ========================= */
+/* ICON HÌNH ẢNH */
+/* ========================= */
+
+.web-list h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.web-icon-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #f5f5f5;
+    padding: 4px;
+    flex-shrink: 0;
+}
+
