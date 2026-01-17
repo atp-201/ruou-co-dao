@@ -160,14 +160,3 @@
     }
 }
 
-
-/* ========================= */
-/* BÓNG ẤM TRUYỀN THỐNG */
-/* ========================= */
-
-.product-info,
-.product-card,
-.product-row {
-    box-shadow:
-        0 8px 22px rgba(122, 21, 21, 0.08);
-}
