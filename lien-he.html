@@ -20,172 +20,81 @@
 </head>
 
 <body>
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <span class="brand-top">Rượu</span>
-      <span class="brand-strong">Cô Đào</span>
-    </a>
-    <nav class="nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="gioi-thieu.html">Giới thiệu</a>
-      <a href="san-pham.html">Sản phẩm</a>
-      <a href="lien-he.html" class="active">Liên hệ</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="contact-section">
-      <h1>Liên Hệ Rượu Cô Đào</h1>
-      <p class="contact-note">
-          Liên hệ với chúng tôi
-      </p>
-
-      <!-- QR CODES -->
-      <div class="qr-wrapper">
-
-          <!-- ZALO -->
-          <a href="https://zalo.me/0395193922"
-            target="_blank"
-            class="qr-item">
-              <img src="assets/qr/zalo-qr.png" alt="Zalo Rượu Cô Đào">
-              <span>Zalo</span>
-          </a>
-
-          <!-- FACEBOOK -->
-          <a href="https://www.facebook.com/profile.php?id=61586723451492"
-            target="_blank"
-            class="qr-item">
-              <img src="assets/qr/facebook-qr.png" alt="Facebook Rượu Cô Đào">
-              <span>Facebook</span>
-          </a>
-
-          <!-- TIKTOK -->
-          <a href="https://www.tiktok.com/@music.atp?_r=1&_t=ZS-931zFyf8Eyt"
-            target="_blank"
-            class="qr-item">
-              <img src="assets/qr/tiktok-qr.png" alt="TikTok Rượu Cô Đào">
-              <span>TikTok</span>
-          </a>
-      </div>
-    
-      <!-- MAP -->
-      <div class="map-box">
-          <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
-              allowfullscreen=""
-              loading="lazy">
-          </iframe>
-      </div>
-      <button class="btn-open-map" onclick="openMap()">Mở bản đồ Google Maps</button>
-      <script>
-      function openMap() {
-        const lat = 11.735306;
-        const lng = 107.645083;
-
-        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-        if (isMobile) {
-          // 📱 Ưu tiên mở app Google Maps
-          window.location.href = `geo:${lat},${lng}?q=${lat},${lng}`;
-        } else {
-          // 💻 Mở Google Maps trên trình duyệt
-          window.open(
-            `https://www.google.com/maps?q=${lat},${lng}`,
-            "_blank"
-          );
-        }
-      }
-      </script>
-
-  </section>
-</main>
-
-
-<!--
---------------------------------------------------------------------------------------------------------------
-<section class="contact-section">
-    <h2>Liên Hệ</h2>
-  
-     -----------Nút liên hệ
-    <div class="contact-buttons">
-
-         -----------Zalo
-        <a href="https://zalo.me/your_zalo_id" target="_blank" class="contact-btn zalo">
-            <img src="icons/zalo.png" alt="Zalo">
-            Liên hệ Zalo
-        </a>
-
-         -----------Messenger 
-        <a href="https://m.me/your_facebook_id" target="_blank" class="contact-btn messenger">
-            <img src="icons/messenger.png" alt="Messenger">
-            Nhắn Messenger
-        </a>
-
-         -----------TikTok 
-        <a href="https://www.tiktok.com/@your_tiktok_username" target="_blank" class="contact-btn tiktok">
-            <img src="icons/tiktok.png" alt="TikTok">
-            TikTok
-        </a>    
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-top">Rượu</span>
+        <span class="brand-strong">Cô Đào</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="lien-he.html" class="active">Liên hệ</a>
+      </nav>
     </div>
-     -----------MAP 
-    <div class="map-box">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-    </div>
-</section>
--->
+  </header>
 
+  <main>
+    <section class="contact-section">
+        <h1>Liên Hệ Rượu Cô Đào</h1>
+        <p class="contact-note">
+            Liên hệ với chúng tôi
+        </p>
 
+        <!-- QR CODES -->
+        <div class="qr-wrapper">
 
-<!-- 
---------------------------------------------------------------------------------------------------------------
-<main class="section">
-  <div class="container contact-section">
-    <h2>Liên hệ trực tiếp 0989557099 hoặc gửi mail</h2>
-    <form class="contact-form" action="https://formsubmit.co/ruoucodao@gmail.com" method="POST">
-      <label>Họ tên<input type="text" name="name" required></label>
-      <label>Email<input type="email" name="email" required></label>
-      <label>Số điện thoại<input type="tel" name="phone" required></label>
-      <label>Nội dung<textarea name="message" rows="5" required></textarea></label>
-      <button type="submit">Gửi liên hệ</button>
-    </form>
-    <div style="margin-top:30px;">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
-        width="100%" height="300" style="border:0; border-radius:8px;" loading="lazy"></iframe>
-    </div>
+            <!-- ZALO -->
+            <a href="https://zalo.me/0395193922"
+              target="_blank"
+              class="qr-item">
+                <img src="assets/qr/zalo-qr.png" alt="Zalo Rượu Cô Đào">
+                <span>Zalo</span>
+            </a>
+
+            <!-- FACEBOOK -->
+            <a href="https://www.facebook.com/profile.php?id=61586723451492"
+              target="_blank"
+              class="qr-item">
+                <img src="assets/qr/facebook-qr.png" alt="Facebook Rượu Cô Đào">
+                <span>Facebook</span>
+            </a>
+
+            <!-- TIKTOK -->
+            <a href="https://www.tiktok.com/@music.atp?_r=1&_t=ZS-931zFyf8Eyt"
+              target="_blank"
+              class="qr-item">
+                <img src="assets/qr/tiktok-qr.png" alt="TikTok Rượu Cô Đào">
+                <span>TikTok</span>
+            </a>
+        </div>
+      
+        <!-- MAP -->
+        <div class="map-box">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+        <button class="btn-open-map" onclick="openMap()">Mở bản đồ Google Maps</button>
+
+    </section>
+  </main>
+
+  <!-- MUSIC PLAYER -->
+  <div class="music-player">
+    <button id="musicBtn">🔊 Nhạc</button>
   </div>
-</main>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span id="year5"></span> Rượu Cô Đào</p>
-  </div>
-</footer>
- -->
-<script>
-document.getElementById('year5').textContent = new Date().getFullYear();
-</script>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
+  </audio>
 
-<!-- MUSIC PLAYER -->
-<div class="music-player">
-  <button id="musicBtn">🔊 Nhạc</button>
-</div>
-
-<audio id="bgMusic" loop>
-  <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
-</audio>
-
-<script src="js/music.js"></script>
+  <script src="js/hide.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/music.js"></script>
 
 </body>
 </html>
-
-
-
-
