@@ -1,59 +1,95 @@
 /* ========================= */
 /* Tổng thể & Header/Footer */
 /* ========================= */
-/* ========================= */
-/* BACKGROUND TEXTURE CAO CẤP */
-/* ========================= */
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+
+    /* NỀN CAO CẤP */
+    background:
+        radial-gradient(
+            rgba(153, 255, 0, 0.13) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            180deg,
+            #fdfdf8 0%,
+            #fffaf3 40%,
+            #f8f6f0 100%
+        );
+    background-size: 26px 26px, 100% 100%;
     color: #333;
     line-height: 1.6;
-
-    /* Nền màu gốc */
-    background-color: #fdf6f0;
-
-    /* Texture giấy mỹ thuật (CSS thuần) */
-    background-image:
-        radial-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
-        radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
-        linear-gradient(180deg, #fdf6f0 0%, #fff4e6 100%);
-
-    background-size:
-        4px 4px,
-        6px 6px,
-        100% 100%;
-
-    background-position:
-        0 0,
-        2px 2px,
-        center;
-
-    background-attachment: fixed;
 }
+
 
 header .brand,
 header .brand:hover,
 header .brand:focus,
+
 header .brand:active {
     text-decoration: none;
 }
+
 header {
-    background-color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    /* NỀN CỐ ĐỊNH – KHÔNG ANIMATE */
+    background:
+        radial-gradient(
+            rgba(153, 255, 0, 0.08) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            120deg,
+            #f6ffe6,
+            #ffffff,
+            #f6ffe6
+        );
+    background-size: 24px 24px, 100% 100%;
+
+    padding: 1rem 0 0.8rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    will-change: transform;
 
-    /* CĂN GIỮA CHUẨN */
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    overflow: hidden; /* chuẩn bị cho animation an toàn */
 }
 
+/* ẨN HEADER KHI CUỘN XUỐNG */
+header.hide {
+    transform: translateY(-100%);
+    box-shadow: none;
+}
+
+
+/* Hiệu ứng ánh sáng lướt qua header */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(153, 255, 0, 0.25),
+        transparent
+    );
+    transform: translateX(-100%);
+    animation: headerLight 14s linear infinite;
+
+    pointer-events: none;
+}
+
+
+/* ===== LOGO CHỮ CƠ BẢN ===== */
 header .brand {
     font-size: clamp(1.5rem, 3vw, 2rem);
     color: #c0392b;
@@ -74,49 +110,82 @@ header .brand {
 .brand-top {
     display: block;
     font-size: 0.65em;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    color: #9b9b9b;
-    margin-bottom: 0.3rem;
+    color: #6fa800; /* xanh olive dịu */
+    margin-bottom: 0.2rem;
 }
+
 
 /* TÊN CHÍNH */
 .brand-strong {
     display: block;
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-weight: 900;
     font-family: "Playfair Display", "Times New Roman", serif;
-    color: #7a1515;
+    color: #0d532e;
     text-shadow:
         0 1px 0 #fff,
-        0 3px 8px rgba(122, 21, 21, 0.35);
+        0 4px 10px rgba(122, 21, 21, 0.35);
+    transition: transform 0.25s ease, color 0.25s ease;
 }
 
 /* Hover sang trọng */
 header .brand:hover .brand-strong {
-    color: #c0392b;
+    color: #6fa800;
+    transform: scale(1.04);
 }
 
-
+/* Thanh điều hướng */
 nav {
-    text-align: center;
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
 }
+
+/* Liên kết điều hướng */
 nav a {
-    margin: 0 0.8rem;
+    position: relative;
+    margin: 0 0.3rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+
     text-decoration: none;
     color: #333;
     font-weight: 600;
-    transition: color 0.3s;
+
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
-nav a:hover,
+
+/* Hiệu ứng khi hover và trang đang xem */
+nav a:hover::before {
+    transform: translateX(120%);
+}
+
+/* nav a:hover, */
+nav a:hover {
+    background-color: rgba(153, 255, 0, 0.25);
+    color: #4d7a00;
+}
 nav a.active {
-    color: #c0392b;
+    background-color: rgba(153, 255, 0, 0.35);
+    color: #4d7a00;
 }
+
+
+/* Container chung */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
+
+
 .site-footer {
     background-color: #f5f5f5;
     text-align: center;
@@ -212,7 +281,29 @@ nav a.active {
     border-radius: 12px;
 }
 
-/* ========================= */
+
+main {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fffdf6 100%
+        );
+    border-radius: 18px;
+
+    margin: 2.5rem auto;
+    padding: 2.5rem 0;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(153, 255, 0, 0.15);
+}
+main.section {
+    padding: 0;
+}
+
+
+/* ================================================ */
 /* Media Queries */
 @media (max-width: 768px) {
     .hero {
@@ -227,13 +318,14 @@ nav a.active {
     }
 }
 
-/* Mobile tinh chỉnh */
+/* Logo chữ trên mobile */
 @media (max-width: 768px) {
     .brand-strong {
         font-size: 1.4em;
     }
 }
 
+/* Hero Section trên mobile */
 @media (max-width: 480px) {
     .hero {
         padding: 2rem 1rem;
@@ -246,37 +338,116 @@ nav a.active {
 }
 
 
+/* QR Code trong footer */
 @media (max-width: 480px) {
     .qr-item img {
         width: 120px;
         height: 120px;
     }
 }
-
+/* Mobile tinh chỉnh nâng cao */
 @media (max-width: 768px) {
-    .section,
-    .hero {
-        border-radius: 0;
+    header {
+        padding: 0.8rem 0;
     }
 
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+    }
+
+    .brand-strong {
+        font-size: 1.45em;
+    }
+}
+
+/* NỀN CAO CẤP TRÊN MOBILE */
+@media (max-width: 768px) {
     body {
-        background-attachment: scroll;
+        background-size: 32px 32px, 100% 100%;
+    }
+}
+
+/* Giảm chuyển động nền cho người dùng ưu tiên giảm chuyển động */
+@media (prefers-reduced-motion: reduce) {
+    body {
+        background-attachment: initial;
+    }
+}
+
+/* Main trên mobile */
+@media (max-width: 768px) {
+    main {
+        border-radius: 0;
+        margin: 1.5rem 0;
+        padding: 1.5rem 0;
     }
 }
 
 
-/* ========================= */
-/* VÙNG NỘI DUNG NỔI */
-/* ========================= */
-
-.section,
-.hero,
-.site-footer {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.96) 0%,
-        rgba(255, 248, 240, 0.96) 100%
-    );
-    border-radius: 16px;
+/* HEADER GLOW ANIMATION */
+@keyframes headerGlow {
+    0% { background-position: 0% 50%, 0 0; }
+    50% { background-position: 100% 50%, 0 0; }
+    100% { background-position: 0% 50%, 0 0; }
 }
 
+/* LOGO APPEAR ANIMATION */
+.brand {
+    animation: logoAppear 1s ease-out both;
+}
+
+/* Định nghĩa keyframes cho logo xuất hiện */
+@keyframes logoAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* TỐI ƯU HÓA ANIMATION TRÊN MOBILE */
+@media (max-width: 768px) {
+    header {
+        animation-duration: 20s;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Giảm chuyển động cho người dùng ưu tiên giảm chuyển động */
+@media (prefers-reduced-motion: reduce) {
+    header,
+    .brand {
+        animation: none;
+    }
+
+    nav a::before {
+        display: none;
+    }
+}
+
+/* Định nghĩa keyframes cho ánh sáng lướt qua header */
+@keyframes headerLight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
