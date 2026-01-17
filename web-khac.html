@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web khác – Hệ sinh thái Rượu Cô Đào</title>
+
+  <link rel="stylesheet" href="css/styles-main.css">
+  <link rel="stylesheet" href="css/styles-product.css">
+  <link rel="stylesheet" href="css/styles-music.css">
+  <link rel="stylesheet" href="css/styles-web-khac.css">
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-top">Rượu</span>
+        <span class="brand-strong">Cô Đào</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="lien-he.html">Liên hệ</a>
+        <a href="web-khac.html" class="active">Web khác</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Hệ sinh thái website Rượu Cô Đào</h1>
+      <p class="muted">
+        Các website và dự án online do Rượu Cô Đào vận hành.
+      </p>
+
+        <div class="web-list">
+            <div class="card">
+                <h3>
+                <img src="assets/icons/web-qr-code.png" alt="QR Code Icon" class="web-icon-img">
+                Tạo QR Code online
+                </h3>
+                <p>...</p>
+                <a class="btn" href="https://atp-201.github.io/Web-Create-QR-code/" target="_blank">
+                Truy cập
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>
+                <img src="assets/icons/web-qr-code.png" alt="QR Code Icon" class="web-icon-img">
+                Tạo QR Code online
+                </h3>
+                <p>...</p>
+                <a class="btn" href="https://atp-201.github.io/Web-Create-QR-code/" target="_blank">
+                Truy cập
+                </a>
+            </div>
+
+        </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Rượu Cô Đào</p>
+    </div>
+  </footer>
+
+  <!-- MUSIC -->
+  <div class="music-player">
+    <button id="musicBtn">🔊 Nhạc</button>
+  </div>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/hide.js"></script>
+  <script src="js/music.js"></script>
+</body>
+</html>
