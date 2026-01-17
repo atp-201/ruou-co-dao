@@ -6,7 +6,7 @@
     position: fixed;        /* Luôn hiện khi scroll */
     top: 16px;              /* Cách mép trên */
     left: 16px;             /* Cách mép trái */
-    z-index: 999;
+    z-index: 2000;          /* Ưu tiên hiển thị trên cùng */
 }
 
 .music-player button {
@@ -38,5 +38,3 @@
         display: none;
     }
 } */
-
-
