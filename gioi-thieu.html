@@ -18,58 +18,55 @@
 </head>
 
 <body>
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <span class="brand-top">Rượu</span>
-      <span class="brand-strong">Cô Đào</span>
-    </a>
-    <nav class="nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="gioi-thieu.html" class="active">Giới thiệu</a>
-      <a href="san-pham.html">Sản phẩm</a>
-      <a href="lien-he.html">Liên hệ</a>
-    </nav>
-  </div>
-</header>
-
-<main class="section">
-  <div class="container">
-    <h1>Giới thiệu Rượu Cô Đào</h1>
-    <h2>Về Rượu Cô Đào</h2>
-    <p class="muted">Rượu Cô Đào là rượu gạo truyền thống được nấu thủ công, sử dụng nguyên liệu chọn lọc, cam kết chất lượng và hương vị thơm ngon.</p>
-    <div class="grid three">
-      <div class="card"><h3>Nguyên liệu chọn lọc</h3><p>Gạo, men, nước.</p></div>
-      <div class="card"><h3>Quy trình thủ công</h3><p>Ủ – chưng cất gia truyền.</p></div>
-      <div class="card"><h3>Cam kết chất lượng</h3><p>            </p></div>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-top">Rượu</span>
+        <span class="brand-strong">Cô Đào</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html" class="active">Giới thiệu</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
     </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Giới thiệu Rượu Cô Đào</h1>
+      <h2>Về Rượu Cô Đào</h2>
+      <p class="muted">Rượu Cô Đào là rượu gạo truyền thống được nấu thủ công, sử dụng nguyên liệu chọn lọc, cam kết chất lượng và hương vị thơm ngon.</p>
+      <div class="grid three">
+        <div class="card"><h3>Nguyên liệu chọn lọc</h3><p>Gạo, men, nước.</p></div>
+        <div class="card"><h3>Quy trình thủ công</h3><p>Ủ – chưng cất gia truyền.</p></div>
+        <div class="card"><h3>Cam kết chất lượng</h3><p>            </p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year2"></span> Rượu Cô Đào</p>
+    </div>
+  </footer>
+
+  <!-- MUSIC PLAYER -->
+  <div class="music-player">
+    <button id="musicBtn">🔊 Nhạc</button>
   </div>
-</main>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span id="year2"></span> Rượu Cô Đào</p>
-  </div>
-</footer>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
+  </audio>
 
-<script>
-document.getElementById('year2').textContent = new Date().getFullYear();
-</script>
-
-
-<!-- MUSIC PLAYER -->
-<div class="music-player">
-  <button id="musicBtn">🔊 Nhạc</button>
-</div>
-
-<audio id="bgMusic" loop>
-  <source src="mp3/VayCuoiCuaEmGiongNhuBongTuyet.mp3" type="audio/mpeg">
-</audio>
-
-<script src="js/music.js"></script>
-
+  <script src="js/hide.js"></script>
+  <script src="js/music.js"></script>
+  
 </body>
 </html>
+
 
 
 
