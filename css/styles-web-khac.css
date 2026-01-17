@@ -1,0 +1,47 @@
+/* ========================= */
+/* WEB KHÁC – DANH SÁCH DỌC */
+/* ========================= */
+
+.web-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Mỗi website */
+.web-list .card {
+    background: #ffffff;
+    padding: 20px 24px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+/* Tiêu đề */
+.web-list .card h3 {
+    margin: 0 0 6px;
+    color: #0d532e;
+    font-size: 1.2rem;
+}
+
+/* Mô tả */
+.web-list .card p {
+    margin: 0 0 12px;
+    color: #555;
+}
+
+/* Nút truy cập */
+.web-list .card .btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: #6fa800;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.web-list .card .btn:hover {
+    background: #4d7a00;
+}
