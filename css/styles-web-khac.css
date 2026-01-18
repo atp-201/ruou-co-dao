@@ -1,9 +1,14 @@
+/* ========================= */
+/* WEB KHÁC – DANH SÁCH DỌC */
+/* ========================= */
+
 .web-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
+/* Mỗi website */
 .web-list .card {
     background: #ffffff;
     padding: 20px 24px;
@@ -12,17 +17,20 @@
     text-align: left;
 }
 
+/* Tiêu đề */
 .web-list .card h3 {
     margin: 0 0 6px;
     color: #0d532e;
     font-size: 1.2rem;
 }
 
+/* Mô tả */
 .web-list .card p {
     margin: 0 0 12px;
     color: #555;
 }
 
+/* Nút truy cập */
 .web-list .card .btn {
     display: inline-block;
     padding: 8px 18px;
@@ -37,6 +45,10 @@
 .web-list .card .btn:hover {
     background: #4d7a00;
 }
+
+/* ========================= */
+/* DONATE BOX */
+/* ========================= */
 
 .donate-box {
     margin: 32px 0 40px;
@@ -73,6 +85,10 @@
     color: #555;
 }
 
+/* ========================= */
+/* ICON HÌNH ẢNH */
+/* ========================= */
+
 .web-list h3 {
     display: flex;
     align-items: center;
@@ -88,5 +104,3 @@
     padding: 4px;
     flex-shrink: 0;
 }
-
-
