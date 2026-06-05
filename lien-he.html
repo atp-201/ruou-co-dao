@@ -1,76 +1,46 @@
 <!DOCTYPE html>
 <html lang="vi">
-  
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Liên hệ Rượu Cô Đào – Zalo, Facebook, TikTok</title>
-  <meta name="description"
-        content="Liên hệ Rượu Cô Đào qua Zalo, Facebook, TikTok. Địa chỉ và bản đồ Google Maps.">
-  <meta name="keywords"
-        content="liên hệ rượu cô đào, zalo rượu cô đào, mua rượu cô đào">
+  <meta name="description" content="Liên hệ Rượu Cô Đào qua Zalo, Facebook, TikTok. Địa chỉ và bản đồ Google Maps.">
+  <meta property="og:title" content="Rượu Cô Đào – Rượu gạo truyền thống nguyên chất">
+  <meta property="og:description" content="Nấu thủ công theo phương pháp gia truyền. Hương vị đậm đà, cam kết chất lượng. Có các loại 30°, 40°, 50°.">
+  <meta property="og:image" content="https://atp-201.github.io/ruou-co-dao/assets/ruou-co-dao.jpg">
+  <meta property="og:url" content="https://atp-201.github.io/ruou-co-dao/">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="liên hệ rượu cô đào, zalo rượu cô đào, mua rượu cô đào">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://atp-201.github.io/ruou-co-dao/lien-he.html">
+  <link class="canonical" href="https://atp-201.github.io/ruou-co-dao/lien-he.html">
 
-  <link rel="stylesheet" href="css/styles-main.css">
-  <link rel="stylesheet" href="css/styles-contact.css">
-  <link rel="stylesheet" href="css/styles-music.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="brand">
-        <span class="brand-top">Rượu</span>
-        <span class="brand-strong">Cô Đào</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Trang chủ</a>
-        <a href="gioi-thieu.html">Giới thiệu</a>
-        <a href="san-pham.html">Sản phẩm</a>
-        <a href="lien-he.html" class="active">Liên hệ</a>
-        <a href="web-khac.html">Web khác</a>
-      </nav>
-    </div>
-  </header>
 
   <main>
     <section class="contact-section">
         <h1>Liên Hệ Rượu Cô Đào</h1>
-        <p class="contact-note">
-            Liên hệ với chúng tôi
-        </p>
+        <p class="contact-note">Liên hệ với chúng tôi</p>
 
-        <!-- QR CODES -->
         <div class="qr-wrapper">
-
-            <!-- ZALO -->
-            <a href="https://zalo.me/0395193922"
-              target="_blank"
-              class="qr-item">
+            <a href="https://zalo.me/0395193922" target="_blank" class="qr-item">
                 <img src="assets/qr/zalo-qr.png" alt="Zalo Rượu Cô Đào">
                 <span>Zalo</span>
             </a>
 
-            <!-- FACEBOOK -->
-            <a href="https://www.facebook.com/profile.php?id=61586723451492"
-              target="_blank"
-              class="qr-item">
+            <a href="https://www.facebook.com/profile.php?id=61586723451492" target="_blank" class="qr-item">
                 <img src="assets/qr/facebook-qr.png" alt="Facebook Rượu Cô Đào">
                 <span>Facebook</span>
             </a>
 
-            <!-- TIKTOK -->
-            <a href="https://www.tiktok.com/@music.atp?_r=1&_t=ZS-931zFyf8Eyt"
-              target="_blank"
-              class="qr-item">
+            <a href="https://www.tiktok.com/@music.atp?_r=1&_t=ZS-931zFyf8Eyt" target="_blank" class="qr-item">
                 <img src="assets/qr/tiktok-qr.png" alt="TikTok Rượu Cô Đào">
                 <span>TikTok</span>
             </a>
         </div>
       
-        <!-- MAP -->
         <div class="map-box">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15707.3307!2d107.645083!3d11.735306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDQ0JzA3LjEiTiAxMDfCsDM4JzQyLjMiRQ!5e0!3m2!1svi!2s!4v0000000000000"
@@ -79,33 +49,8 @@
             </iframe>
         </div>
         <button class="btn-open-map" onclick="openMap()">Mở bản đồ Google Maps</button>
-
-    </section>
   </main>
   
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Rượu Cô Đào</p>
-    </div>
-    <div id="petals-container"></div>
-    <div id="snow-container"></div>
-  </footer>
-
-  <!-- MUSIC PLAYER -->
-  <div class="music-player">
-    <button id="musicBtn">🔊 Nhạc</button>
-  </div>
-
-  <audio id="bgMusic" loop preload="auto">
-    <source src="mp3/TinhVeSlowed.mp3" type="audio/mpeg">
-  </audio>
-
-  <script src="js/hide.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/music.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
