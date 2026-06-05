@@ -4,97 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web khác – Hệ sinh thái Rượu Cô Đào</title>
-
-  <link rel="stylesheet" href="css/styles-main.css">
-  <link rel="stylesheet" href="css/styles-music.css">
-  <link rel="stylesheet" href="css/styles-web-khac.css">
-
+  <meta property="og:title" content="Rượu Cô Đào – Rượu gạo truyền thống nguyên chất">
+  <meta property="og:description" content="Nấu thủ công theo phương pháp gia truyền. Hương vị đậm đà, cam kết chất lượng. Có các loại 30°, 40°, 50°.">
+  <meta property="og:image" content="https://atp-201.github.io/ruou-co-dao/assets/ruou-co-dao.jpg">
+  <meta property="og:url" content="https://atp-201.github.io/ruou-co-dao/">
+  <meta property="og:type" content="website">
+  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="brand">
-        <span class="brand-top">Rượu</span>
-        <span class="brand-strong">Cô Đào</span>
-      </a>
-      <nav class="nav">
-        <a href="index.html">Trang chủ</a>
-        <a href="gioi-thieu.html">Giới thiệu</a>
-        <a href="san-pham.html">Sản phẩm</a>
-        <a href="lien-he.html">Liên hệ</a>
-        <a href="web-khac.html" class="active">Web khác</a>
-      </nav>
-    </div>
-  </header>
 
   <main class="section">
     <div class="container">
       <h1>Hệ sinh thái website Rượu Cô Đào</h1>
-      <p class="muted">
-        Các website và dự án online do Rượu Cô Đào vận hành.
-      </p>
+      <p class="muted">Các website và dự án online do Rượu Cô Đào vận hành.</p>
 
       <div class="donate-box">
         <p class="donate-text">
             💚 Nếu bạn thấy các website này hữu ích và muốn ủng hộ chi phí,
             bạn có thể <strong>donate cho Rượu Cô Đào</strong> qua mã QR bên dưới.
         </p>
-
         <div class="donate-qr">
             <img src="assets/qr/qr-donate.png" alt="QR donate Rượu Cô Đào">
         </div>
-
-        <p class="donate-note">
-            Xin chân thành cảm ơn sự ủng hộ của bạn 🙏
-        </p>
+        <p class="donate-note">Xin chân thành cảm ơn sự ủng hộ của bạn 🙏</p>
       </div>
 
-
-        <div class="web-list">
-            <div class="card">
-                <h3>
+      <div class="web-list">
+          <div class="card">
+              <h3>
                 <img src="assets/icons/web-qr-code.png" alt="QR Code Icon" class="web-icon-img">
                 Tạo QR Code
-                </h3>
-                <p>...</p>
-                <a class="btn" href="https://atp-201.github.io/Web-Create-QR-code/" target="_blank">
-                Truy cập
-                </a>
-            </div>
+              </h3>
+              <p>...</p>
+              <a class="btn" href="https://atp-201.github.io/Web-Create-QR-code/" target="_blank">Truy cập</a>
+          </div>
 
-            <div class="card">
-                <h3>
+          <div class="card">
+              <h3>
                 <img src="assets/icons/web-quay-so-may-man.png" alt="Quay So May Man Icon" class="web-icon-img">
                 Quay số may mắn
-                </h3>
-                <p>...</p>
-                <a class="btn" href="https://atp-201.github.io/Quay-so-may-man/" target="_blank">
-                Truy cập
-                </a>
-            </div>
-
-        </div>
+              </h3>
+              <p>...</p>
+              <a class="btn" href="https://atp-201.github.io/Quay-so-may-man/" target="_blank">Truy cập</a>
+          </div>
+      </div>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Rượu Cô Đào</p>
-    </div>
-    <div id="petals-container"></div>
-    <div id="snow-container"></div>
-  </footer>
-
-  <!-- MUSIC -->
-  <div class="music-player">
-    <button id="musicBtn">🔊 Nhạc</button>
-  </div>
-  <audio id="bgMusic" loop preload="auto">
-    <source src="mp3/TinhVeSlowed.mp3" type="audio/mpeg">
-  </audio>
-
-  <script src="js/hide.js"></script>
-  <script src="js/music.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
